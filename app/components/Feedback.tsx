@@ -65,18 +65,18 @@ const Feedback = () => {
   }, [current]);
 
   return (
-    <div ref={ref} className="relative w-full mx-auto py-10">
+    <div ref={ref} className="relative w-full mx-auto px-4 md:px-0 py-4 md:py-10">
       <motion.h1 
         initial={{ opacity: 0, x: -200 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-6xl text-center pb-5">The Words of Our Guest!</motion.h1>
+        className="text-5xl md:text-6xl text-left md:text-center pb-5">The Words of Our Guest!</motion.h1>
       <motion.h3 
         initial={{ opacity: 0, x: 200 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="text-center mx-auto mb-10">
-        From luxurious rooms and top-notch amenities to friendly staff and <br />
+        className="text-left md:text-center mx-auto mb-10">
+        From luxurious rooms and top-notch amenities to friendly staff and <span className="hidden md:inline"><br /></span>
         delicious dining, our guests share their honest feedback
       </motion.h3>
 

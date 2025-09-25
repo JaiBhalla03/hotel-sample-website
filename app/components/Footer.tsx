@@ -13,13 +13,14 @@ const Footer = () => {
         initial={{ opacity: 0, y: 200 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, ease: "easeOut" }}
-        className='px-10 pt-10 pb-5 flex flex-col gap-10'>
-            <div className="flex">
-                <div className='w-1/2 flex flex-col gap-5'>
-                    <div>Glamour Hotel and Resort is a five-star hotel located in Canggu, Bali. <br/> Known for its stunning views and elegant atmosphere, this hotel offers<br/> a luxurious and unforgettable vacation experience</div>
-                    <div className='text-xl font-semibold'>Go to details</div>
+        className='px-4 md:px-10 pt-4 md:pt-10 pb-5 flex flex-col gap-10'>
+            <div className="flex flex-col md:flex-row">
+                <div className='w-full md:w-1/2 flex flex-col gap-5'>
+                    <div>Glamour Hotel and Resort is a five-star hotel located in Canggu, Bali. <span className="hidden md:inline"><br /></span>
+ Known for its stunning views and elegant atmosphere, this hotel offers<br/> a luxurious and unforgettable vacation experience</div>
+                    <div className='text-xl py-4 md:py-0 font-semibold'>Go to details</div>
                 </div>
-                <div className="flex w-1/2 justify-between">
+                <div className="flex w-full md:w-1/2 justify-between">
                     <div>
                         <h1 className='text-black font-semibold mb-4'>About</h1>
                         <ul>
@@ -47,11 +48,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex w-full'>
-                <div className='w-1/2'>
+            <div className='flex flex-col md:flex-row w-full'>
+                <div className='text-center md:text-left w-full md:w-1/2'>
                     Copyright © Glomour Hotel & Resort 2025 
                 </div>
-                <div className='w-1/2'>The Best Companion for Your Rest</div>
+                <div className='text-center md:text-right w-full md:w-1/2'>The Best Companion for Your Rest</div>
             </div>
         </motion.div>
         

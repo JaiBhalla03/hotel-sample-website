@@ -9,7 +9,7 @@ interface RoomCardProps {
 
 const RoomCard = ({ link, heading, imageSrc }: RoomCardProps) => {
   return (
-    <div className="relative w-64 h-42 rounded-xl overflow-hidden group cursor-pointer">
+    <div className="relative w-full md:w-64 h-42 rounded-xl overflow-hidden group cursor-pointer">
       <Image
         src={imageSrc}
         alt={heading}
