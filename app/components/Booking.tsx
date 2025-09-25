@@ -23,21 +23,21 @@ const Booking = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <RoomCard link="#" heading="Deluxe Room" imageSrc="/deluxeRoom.jpg" />
+            <RoomCard heading="Deluxe Room" imageSrc="/deluxeRoom.jpg" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           >
-            <RoomCard link="#" heading="Superior Room" imageSrc="/superiorRoom.jpg"/>
+            <RoomCard heading="Superior Room" imageSrc="/superiorRoom.jpg"/>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
           >
-            <RoomCard link="#" heading="Executive Room" imageSrc="/executiveRoom.jpg"/>
+            <RoomCard heading="Executive Room" imageSrc="/executiveRoom.jpg"/>
           </motion.div>
         </div>
         <div>

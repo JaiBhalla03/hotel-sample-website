@@ -2,12 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 
 interface RoomCardProps {
-  link: string;
   heading: string;
   imageSrc: string;
 }
 
-const RoomCard = ({ link, heading, imageSrc }: RoomCardProps) => {
+const RoomCard = ({ heading, imageSrc }: RoomCardProps) => {
   return (
     <div className="relative w-full md:w-64 h-42 rounded-xl overflow-hidden group cursor-pointer">
       <Image
