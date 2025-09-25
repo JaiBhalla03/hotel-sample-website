@@ -15,7 +15,7 @@ const FeedbackCard = ({ location, comment, name, picture }: FeedbackCardProps) =
       <div className="text-sm font-semibold text-gray-600">{location}</div>
 
       {/* Comment */}
-      <div className="text-gray-800 italic">"{comment}"</div>
+      <div className="text-gray-800 italic">{comment}</div>
 
       {/* Footer */}
       <div className="flex items-center gap-3">
